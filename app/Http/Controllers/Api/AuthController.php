@@ -17,7 +17,7 @@ class AuthController extends Controller
     use ApiResponse;
 
     public function register(RegisterRequest $request){
-        $validated = $request->validate();
+        $validated = $request->validated();
         $user = User::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
