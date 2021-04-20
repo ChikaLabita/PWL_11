@@ -20,7 +20,7 @@ class CreateTodosTable extends Migration
             $table->string('todo');
             $table->string('label');
             $table->boolean('done');
-            $table->timestamps(;)
+            $table->timestamps();
         });
     }
 
